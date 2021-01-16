@@ -1,7 +1,7 @@
 # Legends Chat Server
 WPF Application created using C# and .NET Framework and is used as a simple client-server chat server that allows users to send messages over multiple computers.
 
-![alt text](https://github.com/SemiDoge/SQ-TeamClack-TermProj/blob/main/Project%20Documents/TMSProject.png) 
+![alt text](https://github.com/tngo98/Legends-Chat-Server/blob/master/images/chatserver.png) 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### WPF Development
