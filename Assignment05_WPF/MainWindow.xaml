@@ -1,0 +1,25 @@
+﻿<Window x:Class="Assignment05_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment05_WPF"
+        mc:Ignorable="d"
+        Title="Chatter" Height="350" Width="500" Background="AliceBlue" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="190*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer x:Name="chatBoxScroll" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True" Padding="10" Grid.RowSpan="2">
+            <ListBox Height="260" HorizontalAlignment="Left" Name="chatBox" VerticalAlignment="Top" Width="470" Grid.ColumnSpan="2"/>
+        </ScrollViewer>
+        <Label Content="Message:" Height="28" HorizontalAlignment="Left" Margin="0,150,0,0" Name="label5" VerticalAlignment="Top" Width="60" Grid.Row="1" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="60,153,0,0" Name="messageText" VerticalAlignment="Top" Width="300" KeyDown="MessageText_Enter_Press" Grid.Row="1" />
+        <Button Content="Send" Height="25" HorizontalAlignment="Left" Margin="365,153,0,0" Name="sendMessageButton" VerticalAlignment="Top" Width="117" Click="Send_Button_Click" Grid.Row="1"/>
+    </Grid>
+</Window>
